@@ -5,5 +5,114 @@
     --clr-Light-purple: #E5D9F2;
     --clr-Soft-purple: #F5EFFF;
     /* Font family Sizes , Weight  */
+    font-family: "Kanit", serif;
+    font-weight: 100;
+    font-style: normal;
+}
 
+.header-container {
+    background: linear-gradient(90deg, rgb(207, 137, 207), var(--clr-Dark-purple), var(--clr-Medium-purple), var(--clr-Light-purple), var(--clr-Soft-purple));
+    color: whitesmoke;
+    height: 8vh;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    width: 100%;
+}
+
+.header-container img,
+h1 {
+
+    font-size: 2rem;
+}
+
+.header-container img {
+    width: 7rem;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+/* form Styling */
+.form {
+    display: grid;
+    grid-template: auto auto / 1fr 1fr;
+    gap: 1.1rem;
+    margin-bottom: 1.1rem;
+    max-width: 60vw;
+    place-self: center;
+
+}
+
+.form input {
+    width: 100%;
+    margin-top: 0.313rem;
+    border-radius: 0.313rem;
+    border: 0.063rem solid #D5D4D8;
+    text-indent: 0.313rem;
+    box-sizing: border-box;
+    height: 3vh;
+}
+
+.form button {
+    grid-column: 1/-1;
+    border-radius: 0.313rem;
+    background: linear-gradient(90deg, rgb(207, 137, 207), var(--clr-Dark-purple), var(--clr-Medium-purple), var(--clr-Light-purple), var(--clr-Soft-purple));
+    border: none;
+    color: white;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    height: 3vh;
+    cursor: pointer;
+}
+
+.form input,
+.form button {
+    min-height: 40px;
+}
+
+.meme {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.meme>img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.meme span {
+    position: absolute;
+    text-align: center;
+    margin-block: 15px;
+    padding-inline: 5px;
+    font-family: impact, sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
 }
